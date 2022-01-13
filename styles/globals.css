@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: jost-regular;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -13,4 +13,121 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.box {
+  padding: 10px;
+}
+.l-box {
+  padding: 30px;
+}
+
+.head1 {
+  font-family: jost-extrabold;
+  font-size: 18pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.head2 {
+  font-family: jost-extrabold;
+  font-size: 13pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.im-color {
+  color: #a90505;
+  text-shadow: -2.5px 2.5px 0px #fac903;
+}
+
+.bp-color {
+  color: #3c3e3f;
+  text-shadow: -2.5px 2.5px 0px #b79ee2;
+}
+
+.sm-color {
+  color: #aa1212;
+  text-shadow: -2.5px 2.5px 0px #2a3580;
+}
+
+.ds-color {
+  color: #004188;
+  text-shadow: -2.5px 2.5px 0px #f6a100;
+}
+
+/* Boutons */
+.btn {
+  font-family: jost-bold;
+  font-size: 12px;
+  background-color: transparent;
+  border: 2px solid;
+  /* border: transparent; */
+  text-transform: uppercase;
+  padding: 2px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.btn.im {
+  color: #a90505;
+  border-color: #a90505;
+}
+
+.btn.im:hover {
+  color: #fff;
+  border-color: #a90505;
+  background-color: #a90505;
+  transition: all 300ms ease-out;
+  text-shadow: -1px 1px 0px #fac903;
+  box-shadow: 0px 3px 0px #fac903;
+}
+
+.btn.bp {
+  color: #3c3e3f;
+  border-color: #3c3e3f;
+}
+
+.btn.bp:hover {
+  color: #fff;
+  border-color: #3c3e3f;
+  background-color: #3c3e3f;
+  transition: all 300ms ease-out;
+  text-shadow: -1px 1px 0px #b79ee2;
+  box-shadow: 0px 3px 0px #b79ee2;
+}
+
+.btn.sm {
+  color: #2a3580;
+  border-color: #2a3580;
+}
+
+.btn.sm:hover {
+  color: #fff;
+  border-color: #2a3580;
+  background-color: #2a3580;
+  transition: all 300ms ease-out;
+  text-shadow: -1px 1px 0px #aa1212;
+  box-shadow: 0px 3px 0px #aa1212;
+}
+
+.btn.ds {
+  color: #004188;
+  border-color: #004188;
+}
+
+.btn.ds:hover {
+  color: #fff;
+  border-color: #004188;
+  background-color: #004188;
+  transition: all 300ms ease-out;
+  text-shadow: -1px 1px 0px #f6a100;
+  box-shadow: 0px 3px 0px #f6a100;
+}
+/* Fin boutons */
+
+.flex {
+  display: flex;
+  justify-content: space-around;
 }

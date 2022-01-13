@@ -1,0 +1,18 @@
+.border {
+  border: 1px solid red;
+}
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.navbar li {
+  padding: 0 20px;
+}
+.navbar li.head2:hover {
+  border-bottom: 2px solid #000;
+}
+.b-border {
+  border-bottom: 1px solid red;
+}
