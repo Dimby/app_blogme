@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: jost-regular;
   letter-spacing: 0.5px;
+  background-color: #f2dca7;
 }
 
 a {
@@ -20,6 +21,7 @@ a {
 }
 .l-box {
   padding: 30px;
+  border-bottom: 1px solid #ffffff6b;
 }
 
 .head1 {

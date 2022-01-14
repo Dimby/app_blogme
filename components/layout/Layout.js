@@ -1,10 +1,11 @@
 import Link from "next/link";
 import style from "./Layout.module.css";
+import { IoToggleSharp } from "react-icons/io5";
 
 export default function Layout(props) {
   return (
     <>
-      <header className="flex l-box b-border">
+      <header className="flex l-box">
         <div className="logo box">ICON</div>
         <nav className="box">
           <ul className={style.navbar}>
@@ -22,7 +23,9 @@ export default function Layout(props) {
         </nav>
         <div className="language box">
           <span className="head2 im-color">FR </span>
-          <span>|</span>
+          <span>
+            <IoToggleSharp />
+          </span>
           <span> MG</span>
         </div>
       </header>
