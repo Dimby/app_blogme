@@ -4,7 +4,20 @@ body {
   margin: 0;
   font-family: jost-regular;
   letter-spacing: 0.5px;
-  background-color: #f2dca7;
+  color: #136494;
+}
+body {
+  background-image: url(../public/images/fond.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  position: absolute;
+  bottom: 18px;
+  right: 40px;
+  color: #fff;
+  font-size: 13px;
 }
 
 a {
@@ -24,6 +37,13 @@ a {
   border-bottom: 1px solid #ffffff6b;
 }
 
+.head {
+  font-family: jost-extrabold;
+  font-size: 38pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
 .head1 {
   font-family: jost-extrabold;
   font-size: 18pt;
@@ -38,25 +58,131 @@ a {
   letter-spacing: 1.5px;
 }
 
-.im-color {
+.head-lower {
+  font-family: jost-extrabold;
+  font-size: 17pt;
+  letter-spacing: 1.5px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.im-text {
   color: #a90505;
-  text-shadow: -2.5px 2.5px 0px #fac903;
+  text-shadow: -2px 2px 0px #fac903;
 }
 
-.bp-color {
+.bp-text {
   color: #3c3e3f;
-  text-shadow: -2.5px 2.5px 0px #b79ee2;
+  text-shadow: -2px 2px 0px #b79ee2;
 }
 
-.sm-color {
+.sm-text {
   color: #aa1212;
-  text-shadow: -2.5px 2.5px 0px #2a3580;
+  text-shadow: -2px 2px 0px #2a3580;
 }
 
-.ds-color {
+.ds-text {
   color: #004188;
-  text-shadow: -2.5px 2.5px 0px #f6a100;
+  text-shadow: -2px 2px 0px #f6a100;
 }
+
+.border {
+  border: 1px solid grey;
+}
+.l-border {
+  border-left: 1px solid #ffffff6b;
+}
+.r-border {
+  border-right: 1px solid #ffffff6b;
+}
+.t-border {
+  border-top: 1px solid #ffffff6b;
+}
+.b-border {
+  border-bottom: 1px solid #ffffff6b;
+}
+.w-100 {
+  width: 100%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-20 {
+  width: 20%;
+}
+
+.h-70vh {
+  height: 70vh;
+}
+
+/* Positionnement */
+.m-3 {
+  margin: 3em;
+}
+.ml-3 {
+  margin-left: 3em;
+}
+.mr-3 {
+  margin-right: 3em;
+}
+.p-3 {
+  padding: 3em;
+}
+.pl-3 {
+  padding-left: 3em;
+}
+.pr-3 {
+  padding-right: 3em;
+}
+.pt-3 {
+  padding-top: 3em;
+}
+/* Fin Positionnement */
+
+/* form */
+.form-item {
+  margin-bottom: 15px;
+  color: #aa1212;
+}
+.form-item label {
+  display: block;
+  font-family: jost-bold;
+  margin: 0 0 10px 5px;
+}
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  border: 1px solid #ffffff5e;
+  padding: 5px 8px;
+  background-color: #ffffff5e;
+  font-size: 15px;
+  color: #2a3580;
+  font-family: jost-regular;
+}
+:focus-visible {
+  outline: none;
+}
+.text-small {
+  font-family: jost-regular;
+}
+input:-internal-autofill-selected {
+  background-color: #fff !important;
+}
+/* Fin form */
 
 /* Boutons */
 .btn {
@@ -132,4 +258,190 @@ a {
 .flex {
   display: flex;
   justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.h-v-center {
+  justify-content: center !important;
+  align-items: center;
+}
+.flex-row {
+  flex-direction: column;
+}
+
+.social-section span svg {
+  height: 1.5em;
+  width: 1.5em;
+  position: relative;
+  top: 2px;
+}
+.social-section span:nth-child(1) {
+  position: relative;
+  bottom: 3px;
+  margin: 0 20px 0 10px;
+  color: #136494;
+  cursor: default;
+}
+.social-section span {
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.loving {
+  border-bottom: 1px solid #ffffff6b;
+  position: relative;
+  bottom: 10px;
+  margin-left: 10px;
+}
+.loving span {
+  color: #a90505;
+}
+
+.box.social {
+  display: flex;
+  justify-content: start;
+}
+.box.social span.item {
+  margin-right: 20px;
+  background-image: url(../public/images/bg-social.png);
+  width: 50px;
+  height: 50px;
+  display: block;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: right;
+  position: relative;
+  bottom: 0;
+  cursor: pointer;
+}
+.box.social span.item:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease-in;
+}
+.box.social span.item svg {
+  position: relative;
+  top: 18px;
+  font-size: 25px;
+  right: 4px;
+}
+.box.social span.text {
+  margin-right: 20px;
+  position: relative;
+  top: 10px;
+}
+.left-box {
+  width: 60px;
+  margin-right: 4rem;
+}
+
+.ds-artifact {
+  background-image: url(../public/images/ds-08.svg);
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  right: 50px;
+}
+.ds-aerogliph {
+  background-image: url(../public/images/ds-aerogliph-12.svg);
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 100%;
+  position: fixed;
+}
+.sm-face {
+  background-image: url(../public/images/sm-face-10.svg);
+  background-size: 100% 100%;
+  width: 370px;
+  height: 576px;
+  position: fixed;
+  right: 20px;
+  background-repeat: no-repeat;
+}
+.sm-spiderweb {
+  background-image: url(../public/images/sp-spiderweb-11.svg);
+  background-size: 100% 100%;
+  width: 270px;
+  height: 255px;
+  position: fixed;
+  background-repeat: no-repeat;
+}
+.box-skill {
+  height: 60vh;
+}
+.box-skill .content {
+  height: 45vh;
+  background-color: #f6a100;
+  margin: 20px;
+  opacity: 0.1;
+}
+.box-skill .text {
+  margin: 20px;
+}
+.ds-border {
+  border: 2px solid #2a358061;
+}
+.ds-list {
+  position: fixed;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10em;
+}
+.ds-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ds-list ul li {
+  padding: 6px 10px;
+  background-color: #ffffffa1;
+  width: 200px;
+  margin: 20px 10px;
+  cursor: pointer;
+  border-left: 5px solid transparent;
+}
+.ds-list ul li:hover,
+.ds-list ul li.active {
+  border-left: 5px solid #004188;
+  transition: border 500ms ease-in;
+}
+.ds-chevron {
+  position: absolute;
+  right: -80px;
+  margin-top: -4px;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../public/images/chevron-13.svg);
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 32px;
+}
+.language span svg {
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+  margin: 0 10px 0 0;
+}
+.language span.item {
+  cursor: pointer;
 }
